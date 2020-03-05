@@ -1,0 +1,25 @@
+{
+  "name": "redisign",
+  "version": "1.0.0",
+  "description": "Glo Academy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DmitriySerov/redisign.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DmitriySerov/redisign/issues"
+  },
+  "homepage": "https://github.com/DmitriySerov/redisign#readme",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7"
+  }
+}

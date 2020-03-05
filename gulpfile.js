@@ -13,9 +13,9 @@ gulp.task('browser-sync', function() {
     gulp.watch("./*.html").on('change', browserSync.reload);
 });
  
-gulp.task('default', function () {
+gulp.task('min', function () {
     gulp.src('css/*.css')
         .pipe(cssmin())
         .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest('dist'));
+        .pipe(gulp.dest('min'));
 });

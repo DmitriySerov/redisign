@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'FuturaBookC';
+  src: url("../fonts/futura/FuturaBookC.woff") format("woff") url("../fonts/futura/FuturaBookC.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: wrap; }
+
+@font-face {
+  font-family: 'FuturaDemiC';
+  src: url("../fonts/futura/FuturaDemiC.woff") format("woff") url("../fonts/futura/FuturaDemiC.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: wrap; }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -312,12 +326,21 @@ template {
   .button--primary {
     color: #ffffff;
     background-color: #E3B873; }
+  .button--outline {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff; }
 
 .container {
   max-width: 1256px;
   margin: auto; }
 
 .header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
   background-color: #131313;
   padding: 24px 0px; }
 
@@ -342,6 +365,38 @@ template {
 .contacts__phone {
   margin-right: 45px; }
 
+.hero {
+  position: relative;
+  padding-top: 100px;
+  background: #131313 url(../img/hero-bg.jpg) no-repeat center/cover;
+  height: 100vh;
+  color: #ffffff; }
+  .hero__instagram {
+    position: absolute;
+    left: 0;
+    top: 0;
+    max-width: 80px;
+    height: 100%; }
+
+.instagram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #131313; }
+  .instagram__link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #E3B873;
+    transform: rotate(90deg); }
+
+.title {
+  margin: 0; }
+  .title--primary {
+    color: #E3B873; }
+
+*, :before, :after {
+  box-sizing: border-box; }
+
 body {
-  font-family: sans-serif;
+  font-family: 'FuturaBookC',sans-serif;
   font-size: 14px; }

@@ -4,7 +4,7 @@
     flex-direction: column
     justify-content: center
     align-items: flex-start
-    padding-top: 100px
+    padding-top: 10rem
     background: $dark url(../img/hero-bg.jpg) no-repeat center / cover
     height: 100vh
     color: $light
@@ -18,18 +18,21 @@
         background: rgba( $dark, 0.7)
     &__content
         position: relative
-        max-width: 670px
+        max-width: 67rem
     &__text
-        font-size: 22px
-        line-height: 30px
-        max-width: 500px    
+        font-size: 2.2rem
+        line-height: 3rem
+        max-width: 50rem
+        margin-bottom: 4.1rem   
     &__button
-        margin-right: 20px
+        width: 20.7rem
+        height: 5rem
+        margin-right: 2rem
     &__instagram
         position: absolute
         left: 0
         top: 0
-        max-width: 80px
+        max-width: 8rem
         height: 100%
     &__scroll-down
         position: absolute
@@ -38,20 +41,22 @@
         align-items: center
         left: 0
         bottom: 0
-        min-width: 247px
-        min-height: 97px
+        min-width: 24.7rem
+        min-height: 9.7rem
         background-color: $dark
+        font-family: 'Yeseva One', sans-serif
+        font-size: 1.2rem
         text-transform: uppercase
         text-decoration: none
         color: $light
         &::after
             content: ''
             background: url(../img/arrow-down.svg) no-repeat center
-            width: 30px
-            height: 30px
-            border: 2px solid $primary
+            width: 3rem
+            height: 3rem
+            border: 0.2rem solid $primary
             border-radius: 50%
-            margin-left: 12px
+            margin-left: 1.2rem
 
 .instagram
     display: flex
@@ -65,18 +70,20 @@
         text-decoration: none
         color: $primary
         transform: rotate(90deg)
-        line-height: 0.8
+        line-height: 1.6rem
+        font-size: 1.4rem
         &::after
             content: ''
             background-color: $primary
-            width: 50px
-            height: 2px
-            margin-left: 10px
+            width: 5rem
+            height: 0.2rem
+            margin-left: 1rem
 .title
     margin: 0
     font-family: 'Yeseva One', cursive
-    font-size: 40px
-    line-height: 53px
+    font-size: 4rem
+    line-height: 5.3rem
     text-transform: uppercase
+    margin-bottom: 2rem
     &--primary
         color: $primary            

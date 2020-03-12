@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     const switchModal = () => {
         modal.classList.toggle('modal--visible');
     }
+    // Add event listener 'click'
     modalBtn.forEach(element => {
         element.addEventListener('click', switchModal);
     });

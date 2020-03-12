@@ -552,6 +552,20 @@ img {
   padding: 1.5rem 0;
   text-align: center; }
 
+.projects__section-title {
+  margin-bottom: 3rem; }
+
+.section__description {
+  text-transform: none;
+  font-size: 2rem;
+  line-height: 2.7rem;
+  font-family: 'FuturaBookC', sans-serif;
+  text-align: center;
+  margin: auto;
+  margin-top: 2.3rem;
+  margin-bottom: 4rem;
+  max-width: 74rem; }
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 8px; } }

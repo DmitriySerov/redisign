@@ -1,4 +1,6 @@
 .modal
+    opacity: 0
+    visibility: hidden
     position: fixed
     z-index: 199
     top: 0
@@ -12,6 +14,9 @@
     align-items: center
     justify-content: center
     color: $light
+    &--visible
+        opacity: 1
+        visibility: visible
     &__dialog
         position: relative
         max-width: 50.6rem

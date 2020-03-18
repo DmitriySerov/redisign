@@ -1,18 +1,3 @@
-// document.addEventListener("DOMContentLoaded", function(event) { 
-//     const modal = document.querySelector('.modal');
-//     const modalBtn = document.querySelectorAll('[data-toggle="modle"]');
-//     const closeBtn = document.querySelector('.modal__close');
-//     const switchModal = () => {
-//         modal.classList.toggle('modal--visible');
-//     }
-//     // Add event listener 'click'
-//     modalBtn.forEach(element => {
-//         element.addEventListener('click', switchModal);
-//     });
-
-//     closeBtn.addEventListener('click', switchModal);
-//   });
-
 $(document).ready(function () {
     var modal = $('.modal'),
         modalBtn = $('[data-toggle="modle"]'),
@@ -29,4 +14,18 @@ $(document).ready(function () {
             modal.removeClass('modal--visible');
         };
     });
+    $(window).scroll(function(){
+		if($(window).scrollTop()>500){
+			$('#scroll_top').fadeIn(900)
+		}else{
+			$('#scroll_top').fadeOut(700)
+		}
+	});
+    $(function(){
+        $('#scroll_top').click(function(){
+            $('html, body').animate({scrollTop: 0}, 600);
+            return false;
+        });
+    });
+
 });

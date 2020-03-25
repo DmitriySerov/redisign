@@ -440,12 +440,14 @@ img {
   .section-title {
     text-align: center;
     font-size: 1.4rem; }
+    .section-title__heading {
+      font-size: 2.7rem; }
     .section-title__word {
       display: flex;
       align-items: center; }
       .section-title__word::after {
         content: '';
-        height: 0.2rem;
+        height: 1px;
         width: 9rem;
         background-color: #E3B873;
         margin-left: 2.5rem; }
@@ -614,8 +616,8 @@ img {
   display: flex;
   flex-wrap: wrap; }
   .swiper-slide__text {
-    flex-basis: 50%;
-    margin-bottom: 3rem; }
+    flex-basis: 36%;
+    margin-bottom: 2rem; }
     .swiper-slide__text:last-of-type {
       margin-bottom: 9rem; }
   .swiper-slide__heading {
@@ -710,6 +712,24 @@ img {
   margin-bottom: 4rem;
   max-width: 74rem; }
 
+.slide-title__heading {
+  color: #E3B873;
+  font-size: 1.5rem;
+  line-height: 2.3rem;
+  text-transform: uppercase; }
+
+.slide-title__description {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  max-width: 34rem;
+  margin-bottom: 6.5rem; }
+
+.steps__counter {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  margin-top: 9rem;
+  margin-bottom: 2rem; }
+
 .modal {
   opacity: 0;
   visibility: hidden;
@@ -786,7 +806,9 @@ img {
   .card {
     width: 80%; }
     .card__text {
-      margin-left: 0; } }
+      margin-left: 0; }
+  .col-50 {
+    margin-bottom: 4rem; } }
 
 @media screen and (max-width: 576px) {
   .header__button {
@@ -811,4 +833,6 @@ img {
   .hero__content {
     margin-left: 4rem; }
   .hero__scroll-down {
+    display: none; }
+  .scroll-up {
     display: none; } }

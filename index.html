@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=3480224d-f645-4410-a38f-44cea37ad74d&lang=ru_RU" type="text/javascript">
+    </script>
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -15,7 +17,7 @@
     <div class="header">
         <div class="container">
             <div class="menu">
-                <div class="logo menu__logo wow fadeIn">Repair Design Project</div>
+                <div class="logo menu__logo">Repair Design Project</div>
                 <div class="nav menu__nav">
                     <a href="#" class="nav__item">Главная</a>
                     <a href="#" class="nav__item">Проекты</a>
@@ -460,18 +462,18 @@
                 <form action="#" class="form footer__form">
                     <div class="input-group footer__input-group">
                         <label for="user-name" class="label form__label label--light">Имя</label>
-                        <input type="text" name="userName" class="input form__input footer__input input--light" id="user-name"
-                            placeholder="Как вас зовут:">
+                        <input type="text" name="userName" class="input form__input footer__input input--light"
+                            id="user-name" placeholder="Как вас зовут:">
                     </div>
                     <div class="input-group footer__input-group">
                         <label for="user-phone" class="label form__label label--light">Телефон</label>
-                        <input type="tel" name="userPhone" class="input form__input footer__input input--light" id="user-phone"
-                            placeholder="Ваш номер телефона:">
+                        <input type="tel" name="userPhone" class="input form__input footer__input input--light"
+                            id="user-phone" placeholder="Ваш номер телефона:">
                     </div>
                     <div class="input-group footer__input-group footer__input-group--full-width">
                         <label for="user-question" class="label form__label label--light">Вопрос</label>
-                        <input type="text" name="userQuestion" class="input form__input footer__input input--light" id="user-question"
-                            placeholder="Я хочу спросить:">
+                        <input type="text" name="userQuestion" class="input form__input footer__input input--light"
+                            id="user-question" placeholder="Я хочу спросить:">
                     </div>
                     <div class="policy footer__policy">
                         <input type="checkbox" name="policy-checkbox" id="policy-checkbox" class="policy__checkbox"
@@ -485,9 +487,45 @@
                 <!-- /.form footer__form -->
             </div>
             <!-- /.footer-wrap -->
+            <div class="section-title footer__section-title">
+                <h2 class="section-title__heading footer__heading section-title__heading--primary">Ростов на дону, Торговый центр Plaza Прямой телефон +7 (999) 768 32 99</h2>
+                <!-- /.section-title__heading -->
+                <div class="footer__icons">
+                    <img src="img/mail.svg" alt="camera" class="footer__icon">
+                    <img src="img/instagram.svg" alt="camera" class="footer__icon">
+                </div>
+            </div>
+            <!-- /.section-title -->
+            <div class="map footer__map" id="map">
+                
+            </div>
+            <!-- map -->
+        </div>
         </div>
         <!-- /.container -->
     </footer>
+    <div class="footer__header">
+        <div class="container">
+            <div class="menu">
+                <div class="logo menu__logo">Repair Design Project</div>
+                <div class="nav menu__nav">
+                    <a href="#" class="nav__item">Главная</a>
+                    <a href="#" class="nav__item">Проекты</a>
+                    <a href="#" class="nav__item">Замер</a>
+                    <a href="#" class="nav__item">Команда</a>
+                    <a href="#" class="nav__item">Отзывы</a>
+                    <a href="#" class="nav__item">Контакты</a>
+                </div>
+                <div class="contacts menu__contacts">
+                    <a href="tell:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
+                    <button class="button header__button button--primary" data-toggle="modle">Заказать звонок</button>
+                </div>
+            </div>
+            <!-- /.menu -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- footer_header -->
     <a href="#" class="scroll-up" id="scroll_top">Листайте вверх</a>
     <div class="modal">
         <div class="modal__dialog">

@@ -804,7 +804,8 @@ img {
     min-height: 44.5rem;
     margin: auto;
     padding: 3.5rem;
-    margin-top: -30rem; }
+    margin-top: -30rem;
+    margin-bottom: 5.2rem; }
   .footer__title {
     text-transform: uppercase;
     font-family: 'Yeseva one', cursive;
@@ -836,6 +837,28 @@ img {
   .footer__button {
     margin: auto;
     padding: 1.8rem 6.7rem; }
+  .footer__map {
+    margin-bottom: 2.8rem;
+    max-width: 95rem;
+    min-height: 49.5rem;
+    margin: auto; }
+  .footer__menu {
+    min-height: 13rem;
+    background-color: #131313; }
+  .footer__header {
+    width: 100%;
+    z-index: 99;
+    background-color: #131313;
+    padding: 6rem 0px;
+    min-height: 13rem; }
+  .footer__icons {
+    margin-bottom: 3rem; }
+  .footer__icon {
+    margin-right: 1.5rem; }
+  .footer__heading {
+    max-width: 55rem;
+    margin: auto;
+    margin-bottom: 2.5rem; }
 
 .slide-title__heading {
   color: #E3B873;

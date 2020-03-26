@@ -24,10 +24,28 @@
         &__text
             margin-left: 0  
     .col-50
-        margin-bottom: 4rem          
+        margin-bottom: 4rem
+    .control
+        background-color: $dark
+        color: $light
+        &__button
+            margin: 0 auto
+            order: 5
+            width: 100%
+        &__policy
+            &-label
+                margin-bottom: 62px    
+        &__input
+            &-group
+                flex-basis: 100%
+                &--first
+                    margin-bottom: 63px    
 @media screen and (max-width: 576px)
+    .scroll-up
+        display: none
     .header
         &__button
+            margin: 0 auto
             display: none
     .contacts
         &__phone
@@ -40,11 +58,28 @@
             display: block  
             margin-bottom: 2.6rem
             width: 33.8rem
+    .control
+        background-color: $dark
+        color: $light
+        &__button
+            margin: 0 auto
+            order: 5
+            width: 100%
+        &__policy
+            &-label
+                margin-bottom: 62px    
+        &__input
+            &-group
+                flex-basis: 100%
+                &--first
+                    margin-bottom: 63px    
 @media screen and (max-width: 400px)
+    .scroll-up
+        display: none
     html
         font-size: 6px
     .container
-        width: 100%
+        width: 80%
     .logo
         margin-left: 4rem 
     .hero
@@ -53,7 +88,21 @@
         &__scroll-down
             display: none 
     .scroll-up
-        display: none                  
+        display: none
+    .control
+        background-color: $dark
+        color: $light
+        &__button
+            order: 5
+            width: 100%
+        &__policy
+            &-label
+                margin-bottom: 62px    
+        &__input
+            &-group
+                flex-basis: 100%
+                &--first
+                    margin-bottom: 63px                  
 
 
     

@@ -379,6 +379,8 @@ template {
     border: 1px solid #E3B873;
     cursor: pointer;
     margin-right: 0.8rem; }
+  .policy__label--center {
+    justify-content: center; }
 
 .scroll-up {
   position: fixed;
@@ -403,6 +405,13 @@ template {
     border: 0.2rem solid #E3B873;
     border-radius: 50%;
     margin-left: 1.2rem; }
+
+div.invalid {
+  color: tomato;
+  font-size: 1.5rem; }
+
+input.invalid {
+  border-bottom: 1px solid tomato; }
 
 .container {
   width: 85%;
@@ -722,6 +731,9 @@ img {
   .control__policy-label {
     justify-content: center; }
 
+.control__input {
+  color: #131313; }
+
 .video__play {
   position: relative;
   margin: auto; }
@@ -768,8 +780,10 @@ img {
   padding: 1.5rem 0;
   text-align: center; }
 
-.design__section-title {
-  margin-bottom: 3rem; }
+.design {
+  padding-bottom: 45rem; }
+  .design__section-title {
+    margin-bottom: 3rem; }
 
 .section__description {
   text-transform: none;
@@ -781,6 +795,47 @@ img {
   margin-top: 2.3rem;
   margin-bottom: 4rem;
   max-width: 74rem; }
+
+.footer {
+  background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover; }
+  .footer-wrap {
+    background-color: #181818;
+    max-width: 88.3rem;
+    min-height: 44.5rem;
+    margin: auto;
+    padding: 3.5rem;
+    margin-top: -30rem; }
+  .footer__title {
+    text-transform: uppercase;
+    font-family: 'Yeseva one', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 4.5rem;
+    margin-top: 0; }
+  .footer__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 52rem;
+    margin: auto; }
+  .footer__input {
+    padding-top: 0.4rem; }
+    .footer__input-group {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 45%;
+      margin-bottom: 4.5rem; }
+      .footer__input-group--full-width {
+        flex-basis: 100%;
+        margin-bottom: 2.8rem; }
+  .footer__policy {
+    flex-basis: 100%;
+    margin-bottom: 5rem; }
+  .footer__button {
+    margin: auto;
+    padding: 1.8rem 6.7rem; }
 
 .slide-title__heading {
   color: #E3B873;
@@ -844,10 +899,12 @@ img {
   .modal__form {
     display: flex;
     flex-direction: column; }
-  .modal__input {
+  .modal__input-group {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 4.8rem; }
-    .modal__input:last-of-type {
-      margin-bottom: 0.1rem; }
+  .modal__input:last-of-type {
+    margin-bottom: 0.1rem; }
   .modal__policy {
     margin-bottom: 3.9rem; }
   .modal__button {

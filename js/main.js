@@ -83,6 +83,21 @@ $(document).ready(function () {
               required: "Поле обязательно",
               email: "Введите корректный email"
             }
+          },
+          submitHandler: function(form) {
+            $.ajax({
+                type: "POST",
+                url: "send.php",
+                data: $(form).serialize(),
+                success: function (response) {
+                    $(form)[0].reset();
+                    modal.removeClass('modal--visible');
+                    alert('Форма отправлена, мы свяжемся с вами через 10 минут. Подписывайтесь на группу в ВК vk.com/glo_academy');
+                },
+                error: function(response){
+                    console.error('Ошибка запрос'+ response)
+                }
+            });
           }
     });
     // Валидация формы контроля

@@ -18,11 +18,15 @@ $(document).ready(function () {
 
     // scroll-up
     $(window).scroll(function(){
-		if($(window).scrollTop()>500){
-			$('#scroll_top').fadeIn(900)
-		}else{
-			$('#scroll_top').fadeOut(700)
-		}
+        if ($(window).width()>500) {
+            if($(window).scrollTop()>500){
+                $('#scroll_top').fadeIn(900)
+            }else{
+                $('#scroll_top').fadeOut(700)
+            }
+        } else {
+            $('#scroll_top').detach()
+        }
     });
     $(function(){
         $('#scroll_top').click(function(){

@@ -41,8 +41,14 @@
                 &--first
                     margin-bottom: 63px    
 @media screen and (max-width: 576px)
-    .scroll-up
-        display: none
+    .container
+        width: 90%
+    .col-50
+        width: 100%
+    .design
+        background-color: $dark
+        &__section-title
+            color: $light
     .header
         &__button
             margin: 0 auto
@@ -72,14 +78,22 @@
             &-group
                 flex-basis: 100%
                 &--first
-                    margin-bottom: 63px    
+                    margin-bottom: 63px
+    .footer
+        background: $dark
+        &-wrap
+            background-color: $dark
+            padding-right: 0
+            padding-left: 0
+        &__input-group
+            flex-basis: 100%
+        &__header
+            display: none
 @media screen and (max-width: 400px)
-    .scroll-up
-        display: none
     html
         font-size: 6px
     .container
-        width: 80%
+        width: 90%
     .logo
         margin-left: 4rem 
     .hero
@@ -87,8 +101,6 @@
             margin-left: 4rem
         &__scroll-down
             display: none 
-    .scroll-up
-        display: none
     .control
         background-color: $dark
         color: $light

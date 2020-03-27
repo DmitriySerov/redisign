@@ -67,11 +67,12 @@ function fonts(done) {
 
 function imagemin(done) {
     src('img/**/**')
-        .pipe(tinypng({ key: 'W6rhbfBrzf7kVn10B9TYH0b2sR76Hmtf',}))
-        .pipe(dest('(dist/img/'))
+        .pipe(tinypng({key: 'W6rhbfBrzf7kVn10B9TYH0b2sR76Hmtf',}))
+        .pipe(dest('dist/img/'))
     src('img/**/*.svg')
-        .pipe(dest('(dist/img/'))
+        .pipe(dest('dist/img/'))
+        done();    
 }
 
 exports.serve = bs;
-exports.build = series(buildCSS, buildJS, html, php, fonts);
+exports.build = series(buildCSS, buildJS, html, php, fonts,imagemin);

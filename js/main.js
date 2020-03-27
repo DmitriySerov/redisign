@@ -97,6 +97,7 @@ $(document).ready(function () {
                     $(form)[0].reset();
                     modal.removeClass('modal--visible');
                     alert('Форма отправлена, мы свяжемся с вами через 10 минут. Подписывайтесь на группу в ВК vk.com/glo_academy');
+                    ym('93469021', 'reachGoal', 'callBackSuccess'); return true;
                 },
                 error: function(response){
                     console.error('Ошибка запрос'+ response)
